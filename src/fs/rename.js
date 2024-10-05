@@ -1,10 +1,9 @@
 import path from "path";
-import { dirname } from "path";
 import { rename as fsRename, access } from "fs/promises";
 import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const __dirname = path.dirname(__filename);
 
 const srcFileName = "wrongFilename.txt";
 const destFileName = "properFilename.md";
