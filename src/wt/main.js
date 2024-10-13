@@ -6,7 +6,7 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const workerDest = path.join(__dirname, "files", "worker.js");
+const workerDest = path.join(__dirname, "worker.js");
 
 const performCalculations = async () => {
   let increment = 10;
